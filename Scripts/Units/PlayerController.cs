@@ -49,11 +49,6 @@ public class PlayerController : Unit
             NextCannon();
         }
     }
-    protected override void Die()
-    {
-        GameController.Instance.EndGame();
-        base.Die();
-    }
     void MoveControls()
     {
         if (Input.GetKey(KeyCode.A))
